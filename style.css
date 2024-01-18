@@ -279,22 +279,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 34px;
-    padding-left: 84px;
+    padding-top: 87px;
+    margin-left: 84px;
     padding-bottom: 77px;
+    border-bottom: 1px solid #BCBCBC;
+    max-width: 1267px;
  }
+ 
  .social{
     gap: 19px;
     display: flex;
     align-items: center;
-    padding-right: 84px;
+    padding-right: 4px;
  }
  .social > .mini-title > h2{
     padding-right: 50px;
  }
  .footer-footer{
     padding: 34px 939px 37px 88px;
-    border-top: solid #BCBCBC;
     max-width: 1267px;
     display: flex;
     justify-content: space-between;
@@ -466,6 +468,15 @@
  }
  .read-more > a{
    padding-left: 10px;
+ }
+ .container-7{
+   width: 1440px;
+   height: 308px;
+   flex-shrink: 0;
+   border-radius: 40px 40px 0px 0px;
+   background: #FFF;
+   box-shadow: 6px 0px 6px 0px rgba(0, 0, 0, 0.05);
+   margin-top: 69px;
  }
  
  

@@ -195,8 +195,10 @@
     text-align: center;
     font-style: normal;
     
+    
+    
     }
-    .mini-container-6-2> .mini-button-2-container > .mini-button-2{
+    .mini-container-6> .mini-button-2-container > .mini-button-2{
         
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -213,8 +215,36 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+    bottom: 375px;
+
+    
         
     }
+    /* .mini-container-6> .mini-button-2-container > .mini-button-2{
+        
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      color: #FFF;
+      background-color: #262626;
+      border-radius: 40px;
+      width: 175.438px;
+      height: 36.491px;
+      padding: 10.04px 23.96px 9.56px 24.86px;
+      text-align: center;
+      font-style: normal;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+      bottom: 380px;
+      
+      
+      
+          
+      } */
 
     
 
@@ -238,7 +268,7 @@
     
  }
  .mini-container-6{
-    background-image: url(./assets/Fifth\ 1.png);
+   
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -247,13 +277,14 @@
     border-radius: 20px;
  }
  .mini-container-6-1{
-    background-image: url(./assets/Fifth\ 2.png);
+    /* background-image: url(./assets/Fifth\ 2.png); */
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     width: 579.02px;
     height: 278.09px;
     border-radius: 20px;
+    
  }
  .mini-container-6-2{
     background-image: url(./assets/Fifth\ 3.png);

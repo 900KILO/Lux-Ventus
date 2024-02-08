@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nova+Mono&family=Poppins:wght@400;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <?php require "variables.php"; ?>
 </head>
 <body>
 
@@ -231,10 +232,17 @@
             <section class="fifth-section">
                 <div class="container-6">
                     <div class="cards-3">
-                        <div class="card-3">
+                        
+                        <?php 
+                        for ( $i = 0; $i < sizeof($blogs); $i++ ){
+                            
+                            
+                            echo ' <div class="card-3">
+                            
                             <div class="mini-container-6">
+                            <img src=" '.$blogs[$i]['imagep-2'].'" alt="photo">
                                 <div class="mini-button-2-container">
-                                    <a href="#" class="mini-button-2"> LIFESTYLE </a>
+                                    <a href="#" class="mini-button-2"> '.$blogs[$i]['mini-buttonp'].' </a>
                                 </div>
                                 
         
@@ -242,27 +250,30 @@
                             
                             <div class="container-6-text">
                                 <div class="profile-container">
-                                    <img src="./assets/Profile.png" alt="photo">
+                                    <img src="'.$blogs[$i]['imagep'].'" alt="photo">
                                     <p class="name">Mallory Reyn</p>
                                     <p class="date">April 14th, 2023</p>
                 
                                 </div>
                                 <div class="mini-title">
-                                    <h2>5 Reasons to avoid shopping on saturdays</h2>
+                                    <h2>'.$blogs[$i]['mini-titlep'].'</h2>
                                 </div>
                                 <div class="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                                        sit amet sapien fringilla, mattis mattis tellus. 
-                                        Nullam quis imperdiet augue. Vestibulum.</p>
+                                    <p>'.$blogs[$i] ['descriptionp'].'</p>
                                 </div>
                                 <div class="read-more">
                                     <img src="./assets/arrow.png" alt="arrow">
                                     <a href="#"> READ MORE </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-3">
+                        </div> ' ;
+                        }
+                        
+                        ?>
+                        
+                        <!-- <div class="card-3">
                             <div class="mini-container-6-1">
+                                <img src="./assets/Fifth 2.png" alt="photo">
                                 <div class="mini-button-2-container">
                                     <a href="#" class="mini-button-2"> ENSEMBLES </a>
                                 </div>
@@ -322,7 +333,7 @@
                                     <a href="#"> READ MORE </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
         

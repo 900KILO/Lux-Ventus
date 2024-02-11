@@ -41,3 +41,38 @@ $blogs = [
         
     ],
 ];
+
+$cards =[
+    [
+        'image' => './assets/Second 1.png',
+        'title' => 'Lingerie',
+        'link' => '#',
+    ],
+    [
+        'image' => './assets/Second 2.png',
+        'title' => 'Spring',
+        'link' => '#',
+    ],
+    [
+        'image' => './assets/Second 3.png',
+        'title' => 'Yoga',
+        'link' => '#',
+    ],
+    [
+        'image' => './assets/Second 4.png',
+        'title' => 'Glow',
+        'link' => '#',
+    ],
+    [
+        'image' => './assets/Second 5.png',
+        'title' => 'Ensembles',
+        'link' => '#',
+    ],
+    [
+        'image' => './assets/Second 6.png',
+        'title' => 'Skin Care',
+        'link' => '#',
+    ],
+    
+    
+];

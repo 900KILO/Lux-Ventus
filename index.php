@@ -26,7 +26,7 @@
                         <img src="./assets/Logo.svg" alt="logo">
                         <nav class="navigation">
                             <a href="#" class="nav-link">Fashion</a>
-                            <a href="./page.html" class="nav-link">Lifestyle</a>
+                            <a href="#" class="nav-link">Lifestyle</a>
                             <a href="#" class="nav-link">Spiritual</a>
                             <a href="#" class="nav-link">Mental Health</a>
                             <a href="#" class="button">Contact Us</a> 
@@ -66,54 +66,22 @@
                 <div class="container-3">
                     <h2 class="title"> Topics </h2>
                     <div class="cards">
-                        <div class="card">
-                            <div class="mini-card">
+                        <?php 
 
-                                <img src="./assets/Second 1.png" alt="photo">
-                                <h2>Lingerie</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="mini-card">
-
-                                <img src="./assets/Second 2.png" alt="photo">
-                                <h2>Spring</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="mini-card">
-
-                                <img src="./assets/Second 3.png" alt="photo">
-                                <h2>Yoga</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="mini-card">
-
-                                <img src="./assets/Second 4.png" alt="photo">
-                                <h2>Glow</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="mini-card">
-
-                                <img src="./assets/Second 5.png" alt="photo">
-                                <h2>Ensembles</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="mini-card">
-
-                                <img src="./assets/Second 6.png" alt="photo">
-                                <h2>Skin Care</h2>
-                                <a href="#" class="mini-button"> View More </a>
-                            </div>
-                        </div>
+                            foreach($cards as $card){
+                                echo ' <div class="card">
+                                            <div class="mini-card">
+                
+                                                <img src=" ' . $card ['image'] . ' " alt="photo">
+                                                <h2> ' . $card ['title'] . '</h2>
+                                                <a href="' . $card ['link'] .'" class="mini-button"> View More </a>
+                                            </div>
+                                        </div>';
+                            }
+                        
+                        
+                        ?>
+                        
                     </div>
                 
                 </div>
@@ -271,69 +239,6 @@
                         
                         ?>
                         
-                        <!-- <div class="card-3">
-                            <div class="mini-container-6-1">
-                                <img src="./assets/Fifth 2.png" alt="photo">
-                                <div class="mini-button-2-container">
-                                    <a href="#" class="mini-button-2"> ENSEMBLES </a>
-                                </div>
-                                
-        
-                            </div>
-                            
-                            <div class="container-6-text">
-                                <div class="profile-container">
-                                    <img src="./assets/Profile.png" alt="photo">
-                                    <p class="name">Mallory Reyn</p>
-                                    <p class="date">April 14th, 2023</p>
-                
-                                </div>
-                                <div class="mini-title">
-                                    <h2>10 Brands that remained
-                                        faithful to your classy look.</h2>
-                                </div>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                                        sit amet sapien fringilla, mattis mattis tellus. 
-                                        Nullam quis imperdiet augue. Vestibulum.</p>
-                                </div>
-                                <div class="read-more">
-                                    <img src="./assets/arrow.png" alt="arrow">
-                                    <a href="#"> READ MORE </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-3">
-                            <div class="mini-container-6-2">
-                                <div class="mini-button-2-container">
-                                    <a href="#" class="mini-button-2"> MENTAL HEALTH </a>
-                                </div>
-                                
-        
-                            </div>
-                            
-                            <div class="container-6-text">
-                                <div class="profile-container">
-                                    <img src="./assets/Profile.png" alt="photo">
-                                    <p class="name">Mallory Reyn</p>
-                                    <p class="date">April 14th, 2023</p>
-                
-                                </div>
-                                <div class="mini-title">
-                                    <h2>Mental health tips to cope
-                                        with stress.</h2>
-                                </div>
-                                <div class="description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur Pellentesque 
-                                        sit amet sapien fringilla, mattis mattis tellus. 
-                                        Nullam quis imperdiet augue. Vestibulum.</p>
-                                </div>
-                                <div class="read-more">
-                                    <img src="./assets/arrow.png" alt="arrow">
-                                    <a href="#"> READ MORE </a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
         

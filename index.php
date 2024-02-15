@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nova+Mono&family=Poppins:wght@400;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
-    <?php require "variables.php"; ?>
+    <?php require "variables.php";
+          require "functions.php";       
+     ?>
 </head>
 <body>
 
@@ -25,10 +27,13 @@
                     <div class="header-flex">
                         <img src="./assets/Logo.svg" alt="logo">
                         <nav class="navigation">
-                            <a href="#" class="nav-link">Fashion</a>
+                        <?php
+                            prinNavigation();
+                            ?>
+                            <!-- <a href="#" class="nav-link">Fashion</a>
                             <a href="#" class="nav-link">Lifestyle</a>
                             <a href="#" class="nav-link">Spiritual</a>
-                            <a href="#" class="nav-link">Mental Health</a>
+                            <a href="#" class="nav-link">Mental Health</a> -->
                             <a href="#" class="button">Contact Us</a> 
                             <a href="#" class="nav-link"> <img src="./assets/Search.svg" href="#" > </a> 
                         </nav>

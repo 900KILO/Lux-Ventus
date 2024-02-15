@@ -76,3 +76,11 @@ $cards =[
     
     
 ];
+
+$links =[
+    ['link' => 'Fashion',],
+    ['link' => 'Lifestyle',],
+    ['link' => 'Spiritual',],
+    ['link' => 'Mental Health',],
+    
+];
